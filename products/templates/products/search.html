@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_links %}
+    <!-- User CSS -->
+    <link href="{% static 'products/css/products.css' %}" rel="stylesheet" />
+    <link href="{% static 'user/css/user.css' %}" rel="stylesheet" />
+    <link href="{% static 'user/css/footer.css' %}" rel="stylesheet" />
+    
+{% endblock head_links %}
+
+{% block body %}
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">Liste de produits</h1>
+                    <hr class="divider my-4" />
+                    {% if search_type == "search" %}
+                        <h4 class="text-uppercase text-white font-weight-bold">Résultats de la recherche "{{search}}"</h4>
+                    {% elif search_type == "brand" %}
+                        <h4 class="text-uppercase text-white font-weight-bold">Produits de la marque "{{search}}"</h4>
+                    {% elif search_type == "store" %}
+                        <h4 class="text-uppercase text-white font-weight-bold">Produits trouvables en magasin "{{search}}"</h4>
+                    {% elif search_type == "category" %}
+                        <h4 class="text-uppercase text-white font-weight-bold">Produits de la catégorie "{{search}}"</h4>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-3">
+        {% if products|length == 0 %}
+            {% if search_type == "search" %}
+                <h6 class="row">
+                    Aucun produit correspondant à la recherche <strong>&nbsp;"{{search}}"&nbsp;</strong> n'est enregistré dans notre base de données.
+                </h6>
+            {% elif search_type == "brand" %}
+                <h6 class="row">
+                    La marque <strong>&nbsp;"{{search}}"&nbsp;</strong> ne compte encore aucun produit enregistré dans notre base de données.
+                </h6>
+            {% elif search_type == "store" %}
+                <h6 class="row">
+                    Le magasin <strong>&nbsp;"{{search}}"&nbsp;</strong> ne compte encore aucun produit enregistré dans notre base de données.
+                </h6>
+            {% elif search_type == "category" %}
+                <h6 class="row">
+                    La catégorie <strong>&nbsp;"{{search}}"&nbsp;</strong> ne compte encore aucun produit enregistré dans notre base de données.
+                </h6>
+            {% endif %}
+        {% elif products|length == 1 %}
+            {% if search_type == "search" %}
+                <h6 class="row">
+                    Un seul produit correspondant à la recherche <strong>&nbsp;"{{search}}"&nbsp;</strong> est enregistré dans notre base de données.
+                </h6>
+            {% elif search_type == "brand" %}
+                <h6 class="row">
+                    La marque <strong>&nbsp;"{{search}}"&nbsp;</strong> ne compte qu'un seul produit enregistré dans notre base de données.
+                </h6>
+            {% elif search_type == "store" %}
+                <h6 class="row">
+                    Le magasin <strong>&nbsp;"{{search}}"&nbsp;</strong> ne compte qu'un seul produit enregistré dans notre base de données.
+                </h6>
+            {% elif search_type == "category" %}
+                <h6 class="row">
+                    La catégorie <strong>&nbsp;"{{search}}"&nbsp;</strong> ne compte qu'un seul produit enregistré dans notre base de données.
+                </h6>
+            {% endif %}
+        {% else %}
+            {% if search_type == "search" %}
+                <h6 class="row">
+                    {{products|length}} produits enregistrés dans notre base de données correspondent à la recherche <strong>&nbsp;"{{search}}"&nbsp;</strong>.
+                </h6>
+            {% elif search_type == "brand" %}
+                <h6 class="row">
+                    La marque <strong>&nbsp;"{{search}}"&nbsp;</strong> totalise {{products|length}} produits dans notre base de données.
+                </h6>
+            {% elif search_type == "store" %}
+                <h6 class="row">
+                    Le magasin <strong>&nbsp;"{{search}}"&nbsp;</strong> totalise {{products|length}} produits dans notre base de données.
+                </h6>
+            {% elif search_type == "category" %}
+                <h6 class="row">
+                    La catégorie <strong>&nbsp;"{{search}}"&nbsp;</strong> totalise {{products|length}} produits dans notre base de données.
+                </h6>
+            {% endif %}
+        {% endif %}
+    </div>
+
+    <!-- List of products -->
+    <section class="page-section pt-0">
+        <div class="container" id="products_list">
+            <div class="row justify-content-center">
+                {% for product in products %}
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <div class="row product-page align-items-center justify-content-center"> {# py-3 #}
+                            <a class="col product product-link" href="{% url 'product' product.code %}">
+                                <div class="row product-img-nutriscore justify-content-center">
+                                    <img src="{{product.image_url}}" class="product-img"/>
+                                    {% if product in user_products %}
+                                        <div class="product-checkbox-link">
+                                            <div class="product-checkbox"></div>
+                                            <div class="checkbox-deselected select-checkbox checkbox-registered"></div>
+                                        </div>
+                                    {% endif %}
+                                    <div class="product-nutriscore-badge">
+                                        <div class="nutriscore-text">NUTRI-SCORE</div>
+                                        <div class="nutriscore-badge">
+                                            <div class="nutriscore nutriscore-a {% if product.nutriscore == 'A' %}nutriscore-active{% endif %}">A</div><!--
+                                        --><div class="nutriscore nutriscore-b {% if product.nutriscore == 'B' %}nutriscore-active{% endif %}">B</div><!--
+                                        --><div class="nutriscore nutriscore-c {% if product.nutriscore == 'C' %}nutriscore-active{% endif %}">C</div><!--
+                                        --><div class="nutriscore nutriscore-d {% if product.nutriscore == 'D' %}nutriscore-active{% endif %}">D</div><!--
+                                        --><div class="nutriscore nutriscore-e {% if product.nutriscore == 'E' %}nutriscore-active{% endif %}">E</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row product-name justify-content-center">{{product.name}}</div>
+                                <input type="hidden" class="code" value="{{product.code}}" disabled>
+                                {{product_form.product_code.as_hidden}}
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock body %}
+
+{% block script %}
+    <!-- AJAX new account script -->
+
+    <script src="{% static 'user/js/user.js' %}"></script>
+    <script src="{% static 'products/js/products.js' %}"></script>
+
+{% endblock script %}

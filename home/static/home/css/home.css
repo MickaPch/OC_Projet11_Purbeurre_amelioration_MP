@@ -1,0 +1,19 @@
+.input-search-product {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#btn_submit {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.img-profile {
+    height: 300px;
+}
+
+.text-description {
+    font-size: 0.85rem;
+}
+
+#contact {
+    height: 100vh;
+}

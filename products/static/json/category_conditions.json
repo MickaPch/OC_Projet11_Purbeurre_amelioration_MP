@@ -1,0 +1,15 @@
+{
+    "page_size": 250,
+    "format": "json",
+    "sort_by": "unique_scans_n",
+    "criteria": [
+        {
+            "tagtype": "categories",
+            "tag_contains": "contains"
+        }, {
+            "tagtype": "states",
+            "tag_contains": "contains",
+            "contains": "complete"
+        }
+    ]
+}

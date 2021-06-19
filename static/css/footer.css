@@ -1,0 +1,18 @@
+#mainFooter {
+    box-shadow: none;
+    background-color: transparent !important;
+}
+#mainFooter a {
+color: rgba(255, 255, 255, 0.7) !important;
+}
+#mainFooter a:hover {
+    color: #fff !important;
+}
+
+#mainFooter.footer-scrolled {
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    background-color: #fff !important;
+}
+#mainFooter.footer-scrolled a {
+    color: #212529 !important;
+}

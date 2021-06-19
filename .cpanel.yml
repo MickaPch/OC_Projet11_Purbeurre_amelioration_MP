@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ybwe3630/purbeurre.mickapr.fr
+#     - python3 .purbeurre/manage.py collectstatic --noinput
+#     - python3 .purbeurre/manage.py runserver

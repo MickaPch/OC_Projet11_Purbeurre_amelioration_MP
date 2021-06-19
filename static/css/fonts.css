@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 3rem; /* NE MARCHE PAS */
+    font-weight: 400; /* NE MARCHE PAS */
+}
+
+h2 {
+    font-weight: 300; /* NE MARCHE PAS */
+}
+
+nav:a {
+    font-size: 1.25rem; /* NE MARCHE PAS */
+    font-weight: 300; /* NE MARCHE PAS */
+}
+
+body {
+    font-family: "Scope One", sans-serif;
+    font-size: 1rem;
+}

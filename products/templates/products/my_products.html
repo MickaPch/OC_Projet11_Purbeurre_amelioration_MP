@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_links %}
+    <!-- User CSS -->
+    <link href="{% static 'products/css/products.css' %}" rel="stylesheet" />
+    <link href="{% static 'user/css/user.css' %}" rel="stylesheet" />
+    <link href="{% static 'user/css/footer.css' %}" rel="stylesheet" />
+    
+{% endblock head_links %}
+
+{% block body %}
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">Mes produits enregistrés</h1>
+                    <hr class="divider my-4" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-3">
+        <h6 class="row">
+            {% if products|length > 0 %}
+                Liste des produits enregistrés pour l'utilisateur&nbsp;<!--
+            -->{% if user.username != "" %}<!--
+                --><strong>{{user.username}}</strong><!--
+            -->{% else %}<!--
+                --><strong>{{user.email}}</strong><!--
+            -->{% endif %}&nbsp;:
+            {% else %}
+                Aucun produit enregistré pour l'utilisateur
+            {% endif %}
+        </h6>
+    </div>
+
+    <!-- User products -->
+    <section class="page-section pt-0">
+        <div class="container" id="products_list">
+            <div class="row justify-content-center">
+                {% for product in products %}
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <div class="row product-page align-items-center justify-content-center">
+                            <a class="col product product-link" href="{% url 'product' product.code %}">
+                                <div class="row product-img-nutriscore justify-content-center">
+                                    <img src="{{product.image_url}}" class="product-img"/>
+                                    <div class="product-checkbox-link">
+                                        <div class="product-checkbox"></div>
+                                        <div class="checkbox-deselected select-checkbox checkbox-registered"></div>
+                                    </div>
+                                    <div class="product-nutriscore-badge">
+                                        <div class="nutriscore-text">NUTRI-SCORE</div>
+                                        <div class="nutriscore-badge">
+                                            <div class="nutriscore nutriscore-a {% if product.nutriscore == 'A' %}nutriscore-active{% endif %}">A</div><!--
+                                        --><div class="nutriscore nutriscore-b {% if product.nutriscore == 'B' %}nutriscore-active{% endif %}">B</div><!--
+                                        --><div class="nutriscore nutriscore-c {% if product.nutriscore == 'C' %}nutriscore-active{% endif %}">C</div><!--
+                                        --><div class="nutriscore nutriscore-d {% if product.nutriscore == 'D' %}nutriscore-active{% endif %}">D</div><!--
+                                        --><div class="nutriscore nutriscore-e {% if product.nutriscore == 'E' %}nutriscore-active{% endif %}">E</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row product-name justify-content-center">{{product.name}}</div>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="save_products" class="sticky-bottom" hidden>
+        <form id="save_form">
+            <div class="container">
+                <div class="row justify-content-center">
+                    {% if user.is_authenticated %}
+                        <button class="btn btn-success" id="btn_save"></button>
+                    {% else %}
+                        <button class="btn btn-secondary" id="btn_connect_product">Se connecter pour enregistrer les produits sélectionnés</button>
+                    {% endif %}
+                </div>
+            </div>
+        </form>
+    </section>
+{% endblock body %}
+
+{% block script %}
+    <!-- AJAX new account script -->
+
+    <script src="{% static 'user/js/user.js' %}"></script>
+    <script src="{% static 'products/js/products.js' %}"></script>
+
+{% endblock script %}

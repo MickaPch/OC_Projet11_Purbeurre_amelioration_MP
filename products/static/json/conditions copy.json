@@ -1,0 +1,66 @@
+{
+    "page_size": 50,
+    "format": "json",
+    "sort_by": "unique_scans_n",
+    "criteria": [
+        {
+            "tagtype": "categories",
+            "tag_contains": "contains"
+        }, {
+            "tagtype": "states",
+            "tag_contains": "does_not_contains",
+            "contains": "to-be-completed"
+        }, {
+            "tagtype": "countries",
+            "tag_contains": "contains",
+            "contains": "fr"
+        }, {
+            "tagtype": "stores",
+            "tag_contains": "does_not_contains",
+            "contains": "to-be-completed"
+        }
+    ],
+    "nutriments": [
+        {
+            "nutriment": "nutrition-score-fr",
+            "compare": "lte",
+            "value": "40"
+        }, {
+            "nutriment": "energy-kcal",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "fat",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "saturated-fat",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "carbohydrates",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "sugars",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "fiber",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "proteins",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "salt",
+            "compare": "gte",
+            "value": "0"
+        }, {
+            "nutriment": "sodium",
+            "compare": "gte",
+            "value": "0"
+        }
+    ]
+}

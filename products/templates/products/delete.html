@@ -1,0 +1,15 @@
+<section id="delete_products" class="sticky-bottom" hidden>
+    <form id="form_delete" action="{% url 'delete' %}" method="post">
+        {% csrf_token %}
+        <div class="container">
+            <div class="row justify-content-center">
+                {% if user.is_authenticated %}
+                    <button class="btn btn-danger" id="btn_delete"></button>
+                {% else %}
+                    <button class="btn btn-secondary" id="btn_connect_product"></button>
+                {% endif %}
+            </div>
+        </div>
+        <input type="hidden" name="products_to_delete" id="products_to_delete" value="" />
+    </form>
+</section>

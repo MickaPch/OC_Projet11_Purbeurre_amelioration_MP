@@ -1,0 +1,1 @@
+[{"model": "user.User", "pk": 1, "fields": {"password": "pbkdf2_sha256$216000$EB69R7A2lFI4$inhRwKGLukJy29PqkXiXdGupCPzqee3KtqnWxFACD5k=", "is_superuser": true, "is_staff": true, "is_active": true, "username": "admin", "email": "foo@example.com"}}]

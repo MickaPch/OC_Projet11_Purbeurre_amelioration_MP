@@ -1,0 +1,1017 @@
+{
+    "tags": [
+      {
+        "id": "en:plant-based-foods-and-beverages",
+        "name": "Aliments et boissons à base de végétaux",
+        "url": "https://fr.openfoodfacts.org/categorie/aliments-et-boissons-a-base-de-vegetaux",
+        "known": 1,
+        "products": 101551
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/aliments-d-origine-vegetale",
+        "products": 87315,
+        "id": "en:plant-based-foods",
+        "name": "Aliments d'origine végétale"
+      },
+      {
+        "name": "Snacks",
+        "id": "en:snacks",
+        "products": 53717,
+        "url": "https://fr.openfoodfacts.org/categorie/snacks",
+        "known": 1
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/snacks-sucres",
+        "known": 1,
+        "products": 45379,
+        "id": "en:sweet-snacks",
+        "name": "Snacks sucrés"
+      },
+      {
+        "products": 43820,
+        "url": "https://fr.openfoodfacts.org/categorie/boissons",
+        "known": 1,
+        "name": "Boissons",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q40050"
+        ],
+        "id": "en:beverages"
+      },
+      {
+        "name": "Viandes",
+        "id": "en:meats",
+        "products": 39506,
+        "url": "https://fr.openfoodfacts.org/categorie/viandes",
+        "known": 1
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/produits-laitiers",
+        "products": 35780,
+        "id": "en:dairies",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q185217"
+        ],
+        "name": "Produits laitiers"
+      },
+      {
+        "products": 30521,
+        "url": "https://fr.openfoodfacts.org/categorie/plats-prepares",
+        "known": 1,
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q3391775"
+        ],
+        "name": "Plats préparés",
+        "id": "en:meals"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/aliments-a-base-de-fruits-et-de-legumes",
+        "products": 30521,
+        "id": "en:fruits-and-vegetables-based-foods",
+        "name": "Aliments à base de fruits et de légumes"
+      },
+      {
+        "id": "en:cereals-and-potatoes",
+        "name": "Céréales et pommes de terre",
+        "url": "https://fr.openfoodfacts.org/categorie/cereales-et-pommes-de-terre",
+        "known": 1,
+        "products": 28657
+      },
+      {
+        "products": 27858,
+        "url": "https://fr.openfoodfacts.org/categorie/produits-fermentes",
+        "known": 1,
+        "name": "Produits fermentés",
+        "id": "en:fermented-foods"
+      },
+      {
+        "id": "en:fermented-milk-products",
+        "name": "Produits laitiers fermentés",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q3506176"
+        ],
+        "url": "https://fr.openfoodfacts.org/categorie/produits-laitiers-fermentes",
+        "known": 1,
+        "products": 27585
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/produits-a-tartiner",
+        "products": 25404,
+        "id": "en:spreads",
+        "name": "Produits à tartiner"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/biscuits-et-gateaux",
+        "products": 23680,
+        "id": "en:biscuits-and-cakes",
+        "name": "Biscuits et gâteaux"
+      },
+      {
+        "products": 21582,
+        "url": "https://fr.openfoodfacts.org/categorie/charcuteries",
+        "known": 1,
+        "name": "Charcuteries",
+        "id": "en:prepared-meats"
+      },
+      {
+        "products": 20591,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/petit-dejeuners",
+        "name": "Petit-déjeuners",
+        "id": "en:breakfasts"
+      },
+      {
+        "name": "Epicerie",
+        "id": "en:groceries",
+        "products": 20520,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/epicerie"
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q10943"
+        ],
+        "name": "Fromages",
+        "id": "en:cheeses",
+        "products": 19956,
+        "url": "https://fr.openfoodfacts.org/categorie/fromages",
+        "known": 1
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/cereales-et-derives",
+        "products": 18866,
+        "id": "en:cereals-and-their-products",
+        "name": "Céréales et dérivés"
+      },
+      {
+        "id": "en:fruits-based-foods",
+        "name": "Fruits et produits dérivés",
+        "url": "https://fr.openfoodfacts.org/categorie/fruits-et-produits-derives",
+        "known": 1,
+        "products": 17108
+      },
+      {
+        "name": "Desserts",
+        "id": "en:desserts",
+        "products": 16324,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/desserts"
+      },
+      {
+        "id": "en:plant-based-beverages",
+        "name": "Boissons à base de végétaux",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-a-base-de-vegetaux",
+        "products": 15814
+      },
+      {
+        "id": "en:sweet-spreads",
+        "name": "Produits à tartiner sucrés",
+        "url": "https://fr.openfoodfacts.org/categorie/produits-a-tartiner-sucres",
+        "known": 1,
+        "products": 15075
+      },
+      {
+        "id": "en:seafood",
+        "name": "Produits de la mer",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/produits-de-la-mer",
+        "products": 14222
+      },
+      {
+        "name": "Sauces",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q178359"
+        ],
+        "id": "en:sauces",
+        "products": 13440,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/sauces"
+      },
+      {
+        "products": 13271,
+        "url": "https://fr.openfoodfacts.org/categorie/confiseries",
+        "known": 1,
+        "name": "Confiseries",
+        "id": "en:confectioneries"
+      },
+      {
+        "name": "Volailles",
+        "id": "en:poultries",
+        "products": 12585,
+        "url": "https://fr.openfoodfacts.org/categorie/volailles",
+        "known": 1
+      },
+      {
+        "name": "Poissons",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q600396"
+        ],
+        "id": "en:fishes",
+        "products": 11733,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/poissons"
+      },
+      {
+        "products": 11650,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/legumes-et-derives",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q11004"
+        ],
+        "name": "Légumes et dérivés",
+        "id": "en:vegetables-based-foods"
+      },
+      {
+        "products": 11245,
+        "url": "https://fr.openfoodfacts.org/categorie/conserves",
+        "known": 1,
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q18396746"
+        ],
+        "name": "Conserves",
+        "id": "en:canned-foods"
+      },
+      {
+        "products": 11162,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/surgeles",
+        "name": "Surgelés",
+        "id": "en:frozen-foods"
+      },
+      {
+        "id": "en:plant-based-spreads",
+        "name": "Pâtes à tartiner végétales",
+        "url": "https://fr.openfoodfacts.org/categorie/pates-a-tartiner-vegetales",
+        "known": 1,
+        "products": 10985
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q13270"
+        ],
+        "name": "Biscuits",
+        "id": "en:biscuits",
+        "products": 10741,
+        "url": "https://fr.openfoodfacts.org/categorie/biscuits",
+        "known": 1
+      },
+      {
+        "products": 10367,
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-alcoolisees",
+        "known": 1,
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q154"
+        ],
+        "name": "Boissons alcoolisées",
+        "id": "en:alcoholic-beverages"
+      },
+      {
+        "products": 10105,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/produits-a-la-viande",
+        "name": "Produits à la viande",
+        "id": "en:meat-based-products"
+      },
+      {
+        "id": "en:fruit-based-beverages",
+        "name": "Boissons aux fruits",
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-aux-fruits",
+        "known": 1,
+        "products": 9055
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/condiments",
+        "products": 8739,
+        "id": "en:condiments",
+        "name": "Condiments"
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q2223649"
+        ],
+        "name": "Fromages de France",
+        "id": "en:french-cheeses",
+        "products": 8701,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/fromages-de-france"
+      },
+      {
+        "id": "en:fats",
+        "name": "Matières grasses",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/matieres-grasses",
+        "products": 8688
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/poulets",
+        "known": 1,
+        "products": 8592,
+        "id": "en:chickens",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q780"
+        ],
+        "name": "Poulets"
+      },
+      {
+        "name": "Chocolats",
+        "id": "en:chocolates",
+        "products": 8432,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/chocolats"
+      },
+      {
+        "name": "Gâteaux",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q13276"
+        ],
+        "id": "en:cakes",
+        "products": 8117,
+        "url": "https://fr.openfoodfacts.org/categorie/gateaux",
+        "known": 1
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/jus-et-nectars",
+        "products": 7824,
+        "id": "en:juices-and-nectars",
+        "name": "Jus et nectars"
+      },
+      {
+        "id": "en:salty-snacks",
+        "name": "Snacks salés",
+        "url": "https://fr.openfoodfacts.org/categorie/snacks-sales",
+        "known": 1,
+        "products": 7748
+      },
+      {
+        "name": "Confitures et marmelades",
+        "id": "en:fruit-and-vegetable-preserves",
+        "products": 7455,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/confitures-et-marmelades"
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q4368298"
+        ],
+        "name": "Édulcorants",
+        "id": "en:sweeteners",
+        "products": 7405,
+        "url": "https://fr.openfoodfacts.org/categorie/edulcorants",
+        "known": 1
+      },
+      {
+        "products": 7288,
+        "url": "https://fr.openfoodfacts.org/categorie/plats-prepares-a-la-viande",
+        "known": 1,
+        "name": "Plats préparés à la viande",
+        "id": "en:meals-with-meat"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/produits-deshydrates",
+        "known": 1,
+        "products": 7125,
+        "id": "en:dried-products",
+        "name": "Produits déshydratés"
+      },
+      {
+        "products": 6978,
+        "url": "https://fr.openfoodfacts.org/categorie/fromages-de-vache",
+        "known": 1,
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q3088299"
+        ],
+        "name": "Fromages de vache",
+        "id": "en:cow-cheeses"
+      },
+      {
+        "id": "en:breads",
+        "name": "Pains",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q7802"
+        ],
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/pains",
+        "products": 6944
+      },
+      {
+        "id": "en:salted-spreads",
+        "name": "Produits à tartiner salés",
+        "url": "https://fr.openfoodfacts.org/categorie/produits-a-tartiner-sales",
+        "known": 1,
+        "products": 6936
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/produits-d-elevages",
+        "known": 1,
+        "products": 6798,
+        "id": "en:farming-products",
+        "name": "Produits d'élevages"
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q8752059"
+        ],
+        "name": "Confitures",
+        "id": "en:jams",
+        "products": 6776,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/confitures"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/yaourts",
+        "known": 1,
+        "products": 6512,
+        "id": "en:yogurts",
+        "name": "Yaourts",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q13317"
+        ]
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/fruits-a-coques-et-derives",
+        "products": 6472,
+        "id": "en:nuts-and-their-products",
+        "name": "Fruits à coques et dérivés"
+      },
+      {
+        "name": "Apéritif",
+        "id": "en:appetizers",
+        "products": 6399,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/aperitif"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/frais",
+        "known": 1,
+        "products": 6249,
+        "id": "en:fresh-foods",
+        "name": "Frais"
+      },
+      {
+        "products": 6163,
+        "url": "https://fr.openfoodfacts.org/categorie/graines",
+        "known": 1,
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q2995529"
+        ],
+        "name": "Graines",
+        "id": "en:seeds"
+      },
+      {
+        "id": "en:legumes-and-their-products",
+        "name": "Légumineuses et dérivés",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/legumineuses-et-derives",
+        "products": 6131
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/matieres-grasses-vegetales",
+        "products": 6019,
+        "id": "en:vegetable-fats",
+        "name": "Matières grasses végétales"
+      },
+      {
+        "name": "Boissons avec sucre ajouté",
+        "id": "en:sweetened-beverages",
+        "products": 5951,
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-avec-sucre-ajoute",
+        "known": 1
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/aliments-a-base-de-plantes-en-conserve",
+        "products": 5887,
+        "id": "en:canned-plant-based-foods",
+        "name": "Aliments à base de plantes en conserve"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/jus-de-fruits",
+        "known": 1,
+        "products": 5815,
+        "id": "en:fruit-juices",
+        "name": "Jus de fruits"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/produits-de-la-ruche",
+        "known": 1,
+        "products": 5680,
+        "id": "en:bee-products",
+        "name": "Produits de la ruche"
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q4739805"
+        ],
+        "name": "Huiles",
+        "id": "en:vegetable-oils",
+        "products": 5280,
+        "url": "https://fr.openfoodfacts.org/categorie/huiles",
+        "known": 1
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/miels",
+        "known": 1,
+        "products": 5258,
+        "id": "en:honeys",
+        "name": "Miels"
+      },
+      {
+        "id": "en:wines",
+        "name": "Vins",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q282"
+        ],
+        "url": "https://fr.openfoodfacts.org/categorie/vins",
+        "known": 1,
+        "products": 5253
+      },
+      {
+        "name": "Jambons",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q170486"
+        ],
+        "id": "en:hams",
+        "products": 5225,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/jambons"
+      },
+      {
+        "id": "en:pastas",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q178"
+        ],
+        "name": "Pâtes alimentaires",
+        "url": "https://fr.openfoodfacts.org/categorie/pates-alimentaires",
+        "known": 1,
+        "products": 5219
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/en:fruit-jams",
+        "known": 0,
+        "products": 5081,
+        "id": "en:fruit-jams",
+        "name": "en:fruit-jams"
+      },
+      {
+        "id": "en:hot-beverages",
+        "name": "Boissons chaudes",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q19359564"
+        ],
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-chaudes",
+        "known": 1,
+        "products": 5025
+      },
+      {
+        "products": 4682,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/produits-de-l-olivier",
+        "name": "Produits de l'olivier",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q37083"
+        ],
+        "id": "en:olive-tree-products"
+      },
+      {
+        "id": "en:legumes",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q145909"
+        ],
+        "name": "Légumineuses",
+        "url": "https://fr.openfoodfacts.org/categorie/legumineuses",
+        "known": 1,
+        "products": 4681
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q1364"
+        ],
+        "name": "Fruits",
+        "id": "en:fruits",
+        "products": 4651,
+        "url": "https://fr.openfoodfacts.org/categorie/fruits",
+        "known": 1
+      },
+      {
+        "products": 4644,
+        "url": "https://fr.openfoodfacts.org/categorie/aliments-a-base-de-plantes-sechees",
+        "known": 1,
+        "name": "Aliments à base de plantes séchées",
+        "id": "en:dried-plant-based-foods"
+      },
+      {
+        "id": "en:breakfast-cereals",
+        "name": "Céréales pour petit-déjeuner",
+        "url": "https://fr.openfoodfacts.org/categorie/cereales-pour-petit-dejeuner",
+        "known": 1,
+        "products": 4490
+      },
+      {
+        "id": "en:pastries",
+        "name": "Pâtisseries",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/patisseries",
+        "products": 4457
+      },
+      {
+        "name": "Viennoiseries",
+        "id": "en:viennoiseries",
+        "products": 4348,
+        "url": "https://fr.openfoodfacts.org/categorie/viennoiseries",
+        "known": 1
+      },
+      {
+        "name": "Desserts lactés",
+        "id": "en:dairy-desserts",
+        "products": 4180,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/desserts-lactes"
+      },
+      {
+        "id": "en:frozen-desserts",
+        "name": "Desserts glacés",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/desserts-glaces",
+        "products": 4171
+      },
+      {
+        "id": "en:candies",
+        "name": "Bonbons",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q185583"
+        ],
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/bonbons",
+        "products": 4169
+      },
+      {
+        "name": "Confiseries chocolatées",
+        "id": "en:chocolate-candies",
+        "products": 4020,
+        "url": "https://fr.openfoodfacts.org/categorie/confiseries-chocolatees",
+        "known": 1
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/fromages-a-pate-pressee-cuite",
+        "products": 4007,
+        "id": "en:cooked-pressed-cheeses",
+        "name": "Fromages à pâte pressée cuite",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q3088330"
+        ]
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/legumes-en-conserve",
+        "products": 3974,
+        "id": "en:canned-vegetables",
+        "name": "Légumes en conserve"
+      },
+      {
+        "id": "en:chicken-breasts",
+        "name": "Filets de poulet",
+        "url": "https://fr.openfoodfacts.org/categorie/filets-de-poulet",
+        "known": 1,
+        "products": 3885
+      },
+      {
+        "name": "Saucisses",
+        "id": "en:sausages",
+        "products": 3849,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/saucisses"
+      },
+      {
+        "products": 3807,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/soupes",
+        "name": "Soupes",
+        "id": "en:soups"
+      },
+      {
+        "id": "en:nuts",
+        "name": "Fruits à coques",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q11009"
+        ],
+        "url": "https://fr.openfoodfacts.org/categorie/fruits-a-coques",
+        "known": 1,
+        "products": 3791
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/fruits-secs",
+        "known": 1,
+        "products": 3774,
+        "id": "en:dried-fruits",
+        "name": "Fruits secs"
+      },
+      {
+        "products": 3705,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/chocolats-noirs",
+        "name": "Chocolats noirs",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q2366206"
+        ],
+        "id": "en:dark-chocolates"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/chips-et-frites",
+        "products": 3600,
+        "id": "en:chips-and-fries",
+        "name": "Chips et frites"
+      },
+      {
+        "products": 3570,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/glaces-et-sorbets",
+        "name": "Glaces et sorbets",
+        "id": "en:ice-creams-and-sorbets"
+      },
+      {
+        "products": 3405,
+        "url": "https://fr.openfoodfacts.org/categorie/poissons-et-viandes-et-oeufs",
+        "known": 1,
+        "name": "Poissons et viandes et oeufs",
+        "id": "en:fish-and-meat-and-eggs"
+      },
+      {
+        "name": "Plats préparés au poisson",
+        "id": "en:meals-with-fish",
+        "products": 3341,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/plats-prepares-au-poisson"
+      },
+      {
+        "name": "Plats à base de pâtes",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q18679685"
+        ],
+        "id": "en:pasta-dishes",
+        "products": 3276,
+        "url": "https://fr.openfoodfacts.org/categorie/plats-a-base-de-pates",
+        "known": 1
+      },
+      {
+        "id": "en:olive-oils",
+        "name": "Huiles d'olive",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q93165"
+        ],
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/huiles-d-olive",
+        "products": 3238
+      },
+      {
+        "products": 3224,
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-gazeuses",
+        "known": 1,
+        "name": "Boissons gazeuses",
+        "id": "en:carbonated-drinks"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/jambons-blancs",
+        "products": 3174,
+        "id": "en:white-hams",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q3820622"
+        ],
+        "name": "Jambons blancs"
+      },
+      {
+        "name": "Chips",
+        "id": "en:crisps",
+        "products": 3125,
+        "url": "https://fr.openfoodfacts.org/categorie/chips",
+        "known": 1
+      },
+      {
+        "products": 3099,
+        "url": "https://fr.openfoodfacts.org/categorie/cereales-en-grains",
+        "known": 1,
+        "name": "Céréales en grains",
+        "id": "en:cereal-grains"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/saucissons",
+        "products": 3080,
+        "id": "en:cured-sausages",
+        "name": "Saucissons"
+      },
+      {
+        "products": 3074,
+        "url": "https://fr.openfoodfacts.org/categorie/biscuits-au-chocolat",
+        "known": 1,
+        "name": "Biscuits au chocolat",
+        "id": "en:chocolate-biscuits"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/poissons-fumes",
+        "products": 2979,
+        "id": "en:smoked-fishes",
+        "name": "Poissons fumés"
+      },
+      {
+        "id": "en:poultry-meals",
+        "name": "Plats à la volaille",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/plats-a-la-volaille",
+        "products": 2942
+      },
+      {
+        "products": 2938,
+        "url": "https://fr.openfoodfacts.org/categorie/huiles-d-olive-vierges-extra",
+        "known": 1,
+        "name": "Huiles d'olive vierges extra",
+        "id": "en:extra-virgin-olive-oils"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/saumons",
+        "known": 1,
+        "products": 2900,
+        "id": "en:salmons",
+        "name": "Saumons"
+      },
+      {
+        "products": 2876,
+        "url": "https://fr.openfoodfacts.org/categorie/vins-francais",
+        "known": 1,
+        "name": "Vins français",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q630531"
+        ],
+        "id": "en:wines-from-france"
+      },
+      {
+        "products": 2837,
+        "url": "https://fr.openfoodfacts.org/categorie/boissons-sans-sucre-ajoute",
+        "known": 1,
+        "name": "Boissons sans sucre ajouté",
+        "id": "en:unsweetened-beverages"
+      },
+      {
+        "products": 2833,
+        "url": "https://fr.openfoodfacts.org/categorie/bieres",
+        "known": 1,
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q44"
+        ],
+        "name": "Bières",
+        "id": "en:beers"
+      },
+      {
+        "products": 2794,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/sirops",
+        "name": "Sirops",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q6584340"
+        ],
+        "id": "en:syrups"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/confitures-de-fruits-rouges",
+        "known": 1,
+        "products": 2788,
+        "id": "en:berry-jams",
+        "name": "Confitures de fruits rouges"
+      },
+      {
+        "name": "Poissons en conserve",
+        "id": "en:canned-fishes",
+        "products": 2733,
+        "url": "https://fr.openfoodfacts.org/categorie/poissons-en-conserve",
+        "known": 1
+      },
+      {
+        "name": "Pizzas tartes salées et quiches",
+        "id": "en:pizzas-pies-and-quiches",
+        "products": 2710,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/pizzas-tartes-salees-et-quiches"
+      },
+      {
+        "id": "en:bonbons",
+        "name": "Bonbons de chocolat",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q3272827"
+        ],
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/bonbons-de-chocolat",
+        "products": 2657
+      },
+      {
+        "id": "en:coffees",
+        "name": "Cafés",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q8486"
+        ],
+        "url": "https://fr.openfoodfacts.org/categorie/cafes",
+        "known": 1,
+        "products": 2620
+      },
+      {
+        "products": 2610,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/rillettes",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q1933110"
+        ],
+        "name": "Rillettes",
+        "id": "en:rillettes"
+      },
+      {
+        "url": "https://fr.openfoodfacts.org/categorie/compotes",
+        "known": 1,
+        "products": 2606,
+        "id": "en:compotes",
+        "name": "Compotes",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q635999"
+        ]
+      },
+      {
+        "id": "en:dried-products-to-be-rehydrated",
+        "name": "Produits lyophilisés à reconstituer",
+        "url": "https://fr.openfoodfacts.org/categorie/produits-lyophilises-a-reconstituer",
+        "known": 1,
+        "products": 2584
+      },
+      {
+        "products": 2561,
+        "url": "https://fr.openfoodfacts.org/categorie/plats-prepares-a-rechauffer-au-micro-ondes",
+        "known": 1,
+        "name": "Plats préparés à réchauffer au micro-ondes",
+        "id": "en:microwave-meals"
+      },
+      {
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q8495"
+        ],
+        "name": "Laits",
+        "id": "en:milks",
+        "products": 2553,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/laits"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/thes",
+        "products": 2546,
+        "id": "en:teas",
+        "name": "Thés",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q6097"
+        ]
+      },
+      {
+        "id": "en:ice-creams",
+        "name": "Glaces",
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/glaces",
+        "products": 2543
+      },
+      {
+        "name": "Terrines",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q11175039"
+        ],
+        "id": "en:terrines",
+        "products": 2526,
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/terrines"
+      },
+      {
+        "known": 1,
+        "url": "https://fr.openfoodfacts.org/categorie/sodas",
+        "products": 2510,
+        "id": "en:sodas",
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q147538"
+        ],
+        "name": "Sodas"
+      },
+      {
+        "id": "en:turkeys",
+        "name": "Dindes",
+        "url": "https://fr.openfoodfacts.org/categorie/dindes",
+        "known": 1,
+        "products": 2505
+      }
+    ]
+  }
