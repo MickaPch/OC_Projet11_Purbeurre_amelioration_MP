@@ -119,13 +119,14 @@ class NewAccountView(TemplateView):
                     user_login = email
                 firstname = form_new.cleaned_data["firstname"]
                 lastname = form_new.cleaned_data["lastname"]
-                # newsletter = form_new.cleaned_data["newsletter"]
+                newsletter = form_new.cleaned_data["newsletter"]
                 user = User.objects.create_user(
                     email,
                     password=pwd,
                     username=user_login,
                     first_name=firstname,
-                    last_name=lastname
+                    last_name=lastname,
+                    newsletter=newsletter
                 )
                 user.save()
                 data['ok'] = True
