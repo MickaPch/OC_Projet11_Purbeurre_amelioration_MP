@@ -12,6 +12,8 @@ from user.validators import (
     SpecialCharacterValidator
 )
 
+from user.management.commands.newsletter import Command
+
 
 class UserConfigTest(TestCase):
     """Testing user app"""
@@ -582,3 +584,46 @@ class SuperUserTest(TestCase):
                 password=make_password('admin'),
                 is_superuser=False
             )
+
+
+class SendNewsletter(TestCase):
+    """Test Superuser create"""
+
+    def setUp(self):
+        """setup superuser creation test"""
+        self.user1 = User.objects.create(
+            username='user1',
+            email='foo1@example.com',
+            password=make_password('user1')
+        )
+        self.user2 = User.objects.create(
+            username='user2',
+            email='foo2@example.com',
+            password=make_password('user2')
+        )
+        Newsletter.objects.create(
+            user=self.user1,
+            newsletter=True
+        )
+        Newsletter.objects.create(
+            user=self.user2,
+            newsletter=False
+        )
+    
+    def test_send_newsletter(self):
+        
+        self.assertEqual(len(mail.outbox), 0)
+
+        Command.handle(self)
+
+        self.assertNotEqual(len(mail.outbox), 0)
+        self.assertIn('NEWSLETTER', mail.outbox[0].subject)
+        self.assertEqual(mail.outbox[0].from_email, 'do-not-reply@purbeurre.mickapr.fr')
+        self.assertIn(self.user1.email, mail.outbox[0].to)
+        self.assertNotIn(self.user2.email, mail.outbox[0].to)
+
+    def test_send_newsletter_html_used(self):
+
+        Command.handle(self)
+
+        self.assertIn('Internal_email-29', mail.outbox[0].body)
