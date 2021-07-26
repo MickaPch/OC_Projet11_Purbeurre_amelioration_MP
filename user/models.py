@@ -1,5 +1,6 @@
 """Module user.models"""
 from django.contrib.auth.models import AbstractUser, BaseUserManager
+from django.core.mail import send_mail
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
@@ -23,11 +24,16 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         # Send email
-        user.email_user(
-            'Bienvenue !',
-            'Bienvenue sur la plateforme de comparaison de produits Pur Beurre !',
-            from_email='no-reply@purbeurre.fr'
-        )
+        try:
+            send_mail(
+                'Bienvenue !',
+                'Bienvenue sur la plateforme de comparaison de produits Pur Beurre !',
+                None,
+                [email],
+                fail_silently=False,
+            )
+        except:
+            print('send mail FAILED')
 
         return user
 
@@ -80,6 +86,15 @@ class User(AbstractUser):
     REQUIRED_FIELDS = []
 
     objects = UserManager()
+
+    # def email_user(self, *args, **kwargs):
+    #     send_mail(
+    #         '{}'.format(args[0]),
+    #         '{}'.format(args[1]),
+    #         '{}'.format(args[2]),
+    #         [self.email],
+    #         fail_silently=False,
+    #     )
 
 class Newsletter(models.Model):
     """OneToOne Field for mail newsletter"""

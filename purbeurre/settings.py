@@ -192,13 +192,19 @@ STATICFILES_DIRS = [
 
 # Email Backend
 # Development email
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Production email
-# # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_PORT = 1025
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'elfe.o2switch.net'
+EMAIL_HOST_USER = 'do-not-reply@purbeurre.mickapr.fr'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
+EMAIL_PORT = 465
 
 INTERNAL_IPS = ['127.0.0.1',]
 
-# Fixing Autoprimary keu
+# Fixing Autoprimary key
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

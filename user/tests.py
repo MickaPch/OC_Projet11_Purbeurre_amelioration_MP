@@ -2,6 +2,7 @@
 from django.apps import apps
 from django.test import TestCase, Client
 from django.contrib.auth.hashers import make_password
+from django.core import mail
 
 from user.apps import UserConfig
 from user.models import User
@@ -11,6 +12,7 @@ from user.validators import (
     SpecialCharacterValidator
 )
 
+import time
 
 class UserConfigTest(TestCase):
     """Testing user app"""
@@ -145,6 +147,19 @@ class NewAccountViewTest(TestCase):
                 'pwd': False
             }
         )
+
+    def test_send_mail_when_register_new_account(self):
+        """Test to register new user"""
+
+        self.client.post(
+            '/user/create_new/',
+            self.user
+        )
+        self.assertEqual(len(mail.outbox), 1)
+        self.assertIn('Bienvenue', mail.outbox[0].subject)
+        self.assertEqual(mail.outbox[0].from_email, 'do-not-reply@purbeurre.mickapr.fr')
+        self.assertEqual(mail.outbox[0].to, [self.email])
+        self.assertIn('plateforme de comparaison', mail.outbox[0].body)
 
 
 class LoginViewTest(TestCase):
