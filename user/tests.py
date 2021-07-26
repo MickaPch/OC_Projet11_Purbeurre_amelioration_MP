@@ -5,14 +5,13 @@ from django.contrib.auth.hashers import make_password
 from django.core import mail
 
 from user.apps import UserConfig
-from user.models import User
+from user.models import User, Newsletter
 from user.validators import (
     CapitalValidator,
     DigitValidator,
     SpecialCharacterValidator
 )
 
-import time
 
 class UserConfigTest(TestCase):
     """Testing user app"""
@@ -43,7 +42,8 @@ class NewAccountViewTest(TestCase):
             'user_login': '',
             'firstname': '',
             'lastname': '',
-            'cgu': True
+            'cgu': True,
+            'newsletter': True
         }
 
     def test_new_account_view(self):
@@ -105,7 +105,8 @@ class NewAccountViewTest(TestCase):
             'user_login': '',
             'firstname': '',
             'lastname': '',
-            'cgu': True
+            'cgu': True,
+            'newsletter': True
         }
         response = self.client.post(
             '/user/create_new/',
@@ -133,7 +134,8 @@ class NewAccountViewTest(TestCase):
             'user_login': '',
             'firstname': '',
             'lastname': '',
-            'cgu': True
+            'cgu': True,
+            'newsletter': True
         }
         response = self.client.post(
             '/user/create_new/',
@@ -160,6 +162,53 @@ class NewAccountViewTest(TestCase):
         self.assertEqual(mail.outbox[0].from_email, 'do-not-reply@purbeurre.mickapr.fr')
         self.assertEqual(mail.outbox[0].to, [self.email])
         self.assertIn('plateforme de comparaison', mail.outbox[0].body)
+
+    def test_new_account_suscribe_newsletter_dont_exists_by_default(self):
+        """Test to suscribe newsletter"""
+
+        User.objects.create(
+            username="",
+            email=self.email,
+            password=make_password(self.pwd)
+        )
+
+        newsletter_for_user = Newsletter.objects.filter(
+            user=User.objects.get(email=self.email)
+        )
+        self.assertEqual(len(newsletter_for_user), 0)
+
+
+    def test_new_account_suscribe_newsletter_when_register(self):
+        """Test to suscribe newsletter"""
+
+        self.client.post(
+            '/user/create_new/',
+            self.user
+        )
+
+        newsletter_for_user = Newsletter.objects.filter(
+            user=User.objects.get(email=self.user['email'])
+        )
+        self.assertEqual(len(newsletter_for_user), 1)
+        self.assertTrue(newsletter_for_user[0].newsletter)
+
+
+    def test_new_account_dont_suscribe_newsletter_when_register(self):
+        """Test to suscribe newsletter"""
+
+        user_newsletter_false = self.user.copy()
+        user_newsletter_false['newsletter'] = False
+
+        self.client.post(
+            '/user/create_new/',
+            user_newsletter_false
+        )
+
+        newsletter_for_user = Newsletter.objects.filter(
+            user=User.objects.get(email=user_newsletter_false['email'])
+        )
+        self.assertEqual(len(newsletter_for_user), 1)
+        self.assertFalse(newsletter_for_user[0].newsletter)
 
 
 class LoginViewTest(TestCase):

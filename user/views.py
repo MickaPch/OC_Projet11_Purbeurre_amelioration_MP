@@ -15,7 +15,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
 from .forms import ConnectionForm, NewForm
-from .models import User
+from .models import Newsletter, User
 from .validators import validate_username
 
 
@@ -119,7 +119,6 @@ class NewAccountView(TemplateView):
                     user_login = email
                 firstname = form_new.cleaned_data["firstname"]
                 lastname = form_new.cleaned_data["lastname"]
-                # newsletter = form_new.cleaned_data["newsletter"]
                 user = User.objects.create_user(
                     email,
                     password=pwd,
@@ -128,6 +127,14 @@ class NewAccountView(TemplateView):
                     last_name=lastname
                 )
                 user.save()
+                
+                newsletter = form_new.cleaned_data["newsletter"]
+                newsletter_for_user, created = Newsletter.objects.get_or_create(
+                    user=user
+                )
+                newsletter_for_user.newsletter = newsletter
+                newsletter_for_user.save()
+
                 data['ok'] = True
             else:
                 data['email'] = False
