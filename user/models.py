@@ -4,6 +4,8 @@ from django.core.mail import send_mail
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+from smtplib import SMTPException
+
 from .validators import UsernameValidator
 
 
@@ -37,6 +39,8 @@ class UserManager(BaseUserManager):
                 [email],
                 fail_silently=False,
             )
+        except SMTPException as error:
+            print(error)
         except:
             print('send mail FAILED')
 
