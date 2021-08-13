@@ -196,7 +196,7 @@ STATICFILES_DIRS = [
 
 # Production email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'elfe.o2switch.net'
+EMAIL_HOST = 'mail.purbeurre.mickapr.fr'
 EMAIL_USE_TLS = False
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'do-not-reply@purbeurre.mickapr.fr'
