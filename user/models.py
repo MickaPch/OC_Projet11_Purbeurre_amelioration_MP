@@ -26,23 +26,23 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         # Send email
-        try:
-            if user.first_name != '':
-                username = user.first_name
-            else:
-                username = user.username
-            mail_body = f'Bonjour {username} et bienvenue sur la plateforme de comparaison de produits Pur Beurre !'
-            send_mail(
-                'Bienvenue !',
-                mail_body,
-                None,
-                [email],
-                fail_silently=False,
-            )
-        except SMTPException as error:
-            print(error)
-        except:
-            print('send mail FAILED')
+        # try:
+        if user.first_name != '':
+            username = user.first_name
+        else:
+            username = user.username
+        mail_body = f'Bonjour {username} et bienvenue sur la plateforme de comparaison de produits Pur Beurre !'
+        send_mail(
+            'Bienvenue !',
+            mail_body,
+            None,
+            [email],
+            fail_silently=False,
+        )
+        # except SMTPException as error:
+        #     print(error)
+        # except:
+        #     print('send mail FAILED')
 
         return user
 
