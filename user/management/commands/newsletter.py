@@ -28,4 +28,5 @@ class Command(BaseCommand):
                 None,
                 [email],
                 fail_silently=False,
+                html_message=html_message
             )

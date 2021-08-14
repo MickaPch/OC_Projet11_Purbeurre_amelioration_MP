@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -94,7 +96,7 @@
 			<tr>
 				<td class="wrapper" style="padding:0 10px;">
 					<!-- module 1 -->
-					<table data-module="module-1" data-thumb="thumbnails/01.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-1" data-thumb="{% static 'user/newsletter/thumbnails/01.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
@@ -106,7 +108,7 @@
 														<table class="center" cellpadding="0" cellspacing="0">
 															<tr>
 																<td style="line-height:0;">
-																	<a target="_blank" style="text-decoration:none;" href="https://www.psd2html.com/"><img src="images/logo.png" border="0" style="font:bold 12px/12px Arial, Helvetica, sans-serif; color:#606060;" align="left" vspace="0" hspace="0" width="113" height="12" alt="PSD2HTML.COM" /></a>
+																	<a target="_blank" style="text-decoration:none;" href="https://www.psd2html.com/"><img src="{% static 'user/newsletter/images/logo.png' %}" border="0" style="font:bold 12px/12px Arial, Helvetica, sans-serif; color:#606060;" align="left" vspace="0" hspace="0" width="113" height="12" alt="PSD2HTML.COM" /></a>
 																</td>
 															</tr>
 														</table>
@@ -129,12 +131,16 @@
 						</tr>
 					</table>
 					<!-- module 2 -->
-					<table data-module="module-2" data-thumb="thumbnails/02.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-2" data-thumb="{% static 'user/newsletter/thumbnails/02.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
-									<tr>										<td class="img-flex"><img src="images/img-01.jpg" style="vertical-align:top;" width="600" height="306" alt="" /></td>									</tr>
-									<tr>										<td data-bgcolor="bg-block" class="holder" style="padding:58px 60px 52px;" bgcolor="#f9f9f9">											<table width="100%" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="img-flex"><img src="{% static 'user/newsletter/images/img-01.jpg' %}" style="vertical-align:top;" width="600" height="306" alt="" /></td>
+									</tr>
+									<tr>
+										<td data-bgcolor="bg-block" class="holder" style="padding:58px 60px 52px;" bgcolor="#f9f9f9">
+											<table width="100%" cellpadding="0" cellspacing="0">
 												<tr>
 													<td data-color="title" data-size="size title" data-min="25" data-max="45" data-link-color="link title color" data-link-style="text-decoration:none; color:#292c34;" class="title" align="center" style="font:35px/38px Arial, Helvetica, sans-serif; color:#292c34; padding:0 0 24px;">
 														Newsletter Template
@@ -156,19 +162,21 @@
 														</table>
 													</td>
 												</tr>
-											</table>										</td>									</tr>
+											</table>
+										</td>
+									</tr>
 									<tr><td height="28"></td></tr>
 								</table>
 							</td>
 						</tr>
 					</table>
 					<!-- module 3 -->
-					<table data-module="module-3" data-thumb="thumbnails/03.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-3" data-thumb="{% static 'user/newsletter/thumbnails/03.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
 									<tr>
-										<td class="img-flex"><img src="images/img-02.jpg" style="vertical-align:top;" width="600" height="249" alt="" /></td>
+										<td class="img-flex"><img src="{% static 'user/newsletter/images/img-02.jpg' %}" style="vertical-align:top;" width="600" height="249" alt="" /></td>
 									</tr>
 									<tr>
 										<td data-bgcolor="bg-block" class="holder" style="padding:65px 60px 50px;" bgcolor="#f9f9f9">
@@ -203,7 +211,7 @@
 						</tr>
 					</table>
 					<!-- module 4 -->
-					<table data-module="module-4" data-thumb="thumbnails/04.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-4" data-thumb="{% static 'user/newsletter/thumbnails/04.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
@@ -230,9 +238,15 @@
 													<th class="flex" width="300" align="left" style="vertical-align:top; padding:0;">
 														<table width="100%" cellpadding="0" cellspacing="0">
 															<!-- post -->
-															<tr>																<td class="img-flex"><img src="images/img-03.jpg" style="vertical-align:top;" width="300" height="203" alt="" /></td>															</tr>
-															<tr>																<td data-bgcolor="bg-inner-block-01" class="h-auto" height="297" bgcolor="#a4d3f3">																	<table width="100%" cellpadding="0" cellspacing="0">
-																		<tr>																			<td class="description" style="padding:10px 40px 10px 70px;">																				<table width="100%" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="img-flex"><img src="{% static 'user/newsletter/images/img-03.jpg' %}" style="vertical-align:top;" width="300" height="203" alt="" /></td>
+															</tr>
+															<tr>
+																<td data-bgcolor="bg-inner-block-01" class="h-auto" height="297" bgcolor="#a4d3f3">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="description" style="padding:10px 40px 10px 70px;">
+																				<table width="100%" cellpadding="0" cellspacing="0">
 																					<tr>
 																						<td data-color="title-2" data-size="size title-2" data-min="10" data-max="25" data-link-color="link title-2 color" data-link-style="text-decoration:none; color:#fff;" class="title-2" align="right" style="font:bold 15px/23px Arial, Helvetica, sans-serif; color:#fff; padding:0 0 6px;">
 																							50 MockUps + 50 Logo <br /> Templates Bundle
@@ -243,10 +257,15 @@
 																							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
 																						</td>
 																					</tr>
-																				</table>																			</td>																		</tr>																	</table>																</td>															</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
 															<!-- post -->
 															<tr>
-																<td class="img-flex"><img src="images/img-04.jpg" style="vertical-align:top;" width="300" height="203" alt="" /></td>
+																<td class="img-flex"><img src="{% static 'user/newsletter/images/img-04.jpg' %}" style="vertical-align:top;" width="300" height="203" alt="" /></td>
 															</tr>
 															<tr>
 																<td data-bgcolor="bg-inner-block-02" class="h-auto" height="297" bgcolor="#76b3dd">
@@ -298,7 +317,7 @@
 																</td>
 															</tr>
 															<tr>
-																<td class="img-flex"><img src="images/img-05.jpg" style="vertical-align:top;" width="300" height="200" alt="" /></td>
+																<td class="img-flex"><img src="{% static 'user/newsletter/images/img-05.jpg' %}" style="vertical-align:top;" width="300" height="200" alt="" /></td>
 															</tr>
 															<!-- post -->
 															<tr>
@@ -324,7 +343,7 @@
 																</td>
 															</tr>
 															<tr>
-																<td class="img-flex"><img src="images/img-06.jpg" style="vertical-align:top;" width="300" height="200" alt="" /></td>
+																<td class="img-flex"><img src="{% static 'user/newsletter/images/img-06.jpg' %}" style="vertical-align:top;" width="300" height="200" alt="" /></td>
 															</tr>
 														</table>
 													</th>
@@ -355,7 +374,7 @@
 						</tr>
 					</table>
 					<!-- module 5 -->
-					<table data-module="module-5" data-thumb="thumbnails/05.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-5" data-thumb="{% static 'user/newsletter/thumbnails/05.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
@@ -379,39 +398,16 @@
 															<tr>
 																<th class="flex" width="330" align="left" style="vertical-align:top; padding:0;">
 																	<table width="100%" cellpadding="0" cellspacing="0">
-																		<tr>																			<td style="padding:0 0 10px;">																				<table align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
-																					<tr>
-																						<td class="i-120" valign="top">
-																							<a target="_blank" href="#"><img src="images/img-07.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
-																						</td>
-																						<td width="10"></td>
-																						<td class="i-120" valign="top">
-																							<a target="_blank" href="#"><img src="images/img-08.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
-																						</td>
-																					</tr>
-																				</table>																			</td>																		</tr>
-																	</table>
-																</th>
-																<th class="flex" width="10" style="padding:0;"></th>
-																<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
-																	<table width="100%" cellpadding="0" cellspacing="0">
-																		<tr>																			<td class="i-120" align="center" style="padding:0 0 10px;">																				<a target="_blank" href="#"><img src="images/img-09.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>																			</td>																		</tr>
-																	</table>
-																</th>
-															</tr>
-															<tr>
-																<th class="flex" width="330" align="left" style="vertical-align:top; padding:0;">
-																	<table width="100%" cellpadding="0" cellspacing="0">
 																		<tr>
 																			<td style="padding:0 0 10px;">
 																				<table align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
 																					<tr>
 																						<td class="i-120" valign="top">
-																							<a target="_blank" href="#"><img src="images/img-10.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
+																							<a target="_blank" href="#"><img src="{% static 'user/newsletter/images/img-07.jpg' %}" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
 																						</td>
 																						<td width="10"></td>
 																						<td class="i-120" valign="top">
-																							<a target="_blank" href="#"><img src="images/img-11.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
+																							<a target="_blank" href="#"><img src="{% static 'user/newsletter/images/img-08.jpg' %}" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
 																						</td>
 																					</tr>
 																				</table>
@@ -424,7 +420,38 @@
 																	<table width="100%" cellpadding="0" cellspacing="0">
 																		<tr>
 																			<td class="i-120" align="center" style="padding:0 0 10px;">
-																				<a target="_blank" href="#"><img src="images/img-12.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
+																				<a target="_blank" href="#"><img src="{% static 'user/newsletter/images/img-09.jpg' %}" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
+																			</td>
+																		</tr>
+																	</table>
+																</th>
+															</tr>
+															<tr>
+																<th class="flex" width="330" align="left" style="vertical-align:top; padding:0;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td style="padding:0 0 10px;">
+																				<table align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td class="i-120" valign="top">
+																							<a target="_blank" href="#"><img src="{% static 'user/newsletter/images/img-10.jpg' %}" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
+																						</td>
+																						<td width="10"></td>
+																						<td class="i-120" valign="top">
+																							<a target="_blank" href="#"><img src="{% static 'user/newsletter/images/img-11.jpg' %}" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</th>
+																<th class="flex" width="10" style="padding:0;"></th>
+																<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td class="i-120" align="center" style="padding:0 0 10px;">
+																				<a target="_blank" href="#"><img src="{% static 'user/newsletter/images/img-12.jpg' %}" border="0" style="vertical-align:top;" width="160" height="160" alt="" /></a>
 																			</td>
 																		</tr>
 																	</table>
@@ -453,7 +480,7 @@
 						</tr>
 					</table>
 					<!-- module 6 -->
-					<table data-module="module-6" data-thumb="thumbnails/06.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-6" data-thumb="{% static 'user/newsletter/thumbnails/06.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
@@ -490,7 +517,7 @@
 						</tr>
 					</table>
 					<!-- module 7 -->
-					<table data-module="module-7" data-thumb="thumbnails/07.png" width="100%" cellpadding="0" cellspacing="0">
+					<table data-module="module-7" data-thumb="{% static 'user/newsletter/thumbnails/07.png' %}" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
 							<td data-bgcolor="bg-module" bgcolor="#eaeced">
 								<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
@@ -511,19 +538,19 @@
 														<table class="center" align="right" cellpadding="0" cellspacing="0">
 															<tr>
 																<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
-																	<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-facebook.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="6" height="13" alt="fb" /></a>
+																	<a target="_blank" style="text-decoration:none;" href="#"><img src="{% static 'user/newsletter/images/ico-facebook.png' %}" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="6" height="13" alt="fb" /></a>
 																</td>
 																<td width="20"></td>
 																<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
-																	<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-twitter.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="13" height="11" alt="tw" /></a>
+																	<a target="_blank" style="text-decoration:none;" href="#"><img src="{% static 'user/newsletter/images/ico-twitter.png' %}" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="13" height="11" alt="tw" /></a>
 																</td>
 																<td width="19"></td>
 																<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
-																	<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-google-plus.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="19" height="15" alt="g+" /></a>
+																	<a target="_blank" style="text-decoration:none;" href="#"><img src="{% static 'user/newsletter/images/ico-google-plus.png' %}" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="19" height="15" alt="g+" /></a>
 																</td>
 																<td width="20"></td>
 																<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
-																	<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-linkedin.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="13" height="11" alt="in" /></a>
+																	<a target="_blank" style="text-decoration:none;" href="#"><img src="{% static 'user/newsletter/images/ico-linkedin.png' %}" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="13" height="11" alt="in" /></a>
 																</td>
 															</tr>
 														</table>
